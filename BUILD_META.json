@@ -1,0 +1,14 @@
+{
+  "app_version": "3.0.0-github-source",
+  "questions": 1071,
+  "source_snippet_files": 233,
+  "isolated_visual_table_crops": 31,
+  "full_source_crops": 210,
+  "questions_with_source_assets": 185,
+  "questions_with_structured_content_blocks": 55,
+  "visual_questions": 54,
+  "source_asset_failures": [],
+  "all_source_required_covered": true,
+  "all_visual_questions_covered": true,
+  "qa": "100/100 PASS"
+}

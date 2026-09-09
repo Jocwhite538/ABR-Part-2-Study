@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>ABR Part 2 Study Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <div class="brand"><div class="brand-mark">ABR</div><div><div class="brand-title">ABR Part 2 Study Lab</div><div class="brand-sub">GitHub Source Edition · v3.0</div></div></div>
+  <nav class="nav" aria-label="Primary"><button data-view="dashboard" class="active">Dashboard</button><button data-view="quiz">Quiz</button><button data-view="review">Question Bank</button><button data-view="progress">Progress</button></nav>
+  <div class="top-actions"><span class="top-status"><span class="status-dot"></span>Browser-local progress</span></div>
+</div></header>
+<div class="layout">
+<aside class="sidebar">
+  <section class="side-section"><div class="side-title">Categories</div><div id="categoryChecks"></div></section>
+  <section class="side-section">
+    <div class="side-title">Session setup</div>
+    <div class="field"><label for="sessionSize">Questions</label><select id="sessionSize"><option>10</option><option selected>25</option><option>50</option><option>100</option><option value="all">All matching</option></select></div>
+    <div class="field"><label for="sessionOrder">Order</label><select id="sessionOrder"><option value="random">Random</option><option value="sequential">Sequential</option><option value="weakest">Weakest first</option><option value="missed">Previously missed</option><option value="flagged">Flagged only</option></select></div>
+    <label class="toggle"><input type="checkbox" id="includeReview" checked><span>Include review-required items</span></label>
+    <label class="toggle"><input type="checkbox" id="onlyUnseen"><span>Only not previously attempted</span></label>
+    <button class="btn btn-primary btn-block" id="startSession">Start study session</button>
+  </section>
+  <section class="side-section"><div class="side-title">Current session</div><div id="sideSession" class="small muted">No active session.</div></section>
+  <section class="side-section"><div class="side-title">Progress tools</div><button class="btn btn-quiet btn-block" id="exportProgress">Export progress JSON</button><label class="btn btn-quiet btn-block file-btn">Import progress JSON<input type="file" id="importProgress" accept="application/json"></label></section>
+</aside>
+<main class="main">
+<section id="dashboardView" class="view active">
+  <div class="page-head"><div><h1>Study dashboard</h1><p>1,071 ABR Part 2 practice questions with exact source crops, figures, tables, solutions, and persistent browser progress.</p></div><button class="btn btn-blue" id="quickStart">Quick 25</button></div>
+  <div class="grid grid-4" id="metrics"></div>
+  <div class="spacer16"></div><div class="grid grid-3" id="categoryCards"></div>
+  <div class="spacer16"></div><div class="callout warn"><strong>Answer-key qualification:</strong> The supplied answer keys are the primary grading source, but several were reconstructed from collapsed quiz solutions. Source-dependent conflicts remain flagged instead of being silently certified.</div>
+</section>
+<section id="quizView" class="view">
+  <div class="page-head"><div><h1>Quiz</h1><p id="quizSubheading">Choose settings at left and start a session.</p></div><button class="btn btn-quiet" id="exportSession" disabled>Export session CSV</button></div>
+  <div id="quizEmpty" class="card empty">No active session. Select categories and click <b>Start study session</b>.</div>
+  <div id="quizArea" class="hidden"><div class="quiz-toolbar"><span class="counter" id="sessionCounter"></span><div class="progress-track"><div class="progress-fill" id="sessionProgress"></div></div><span class="counter" id="sessionScore"></span></div><article class="card question-card" id="questionCard"></article></div>
+</section>
+<section id="reviewView" class="view">
+  <div class="page-head"><div><h1>Question bank</h1><p>Search all questions and inspect source fidelity, answer status, figures, tables, and solutions.</p></div><button class="btn btn-quiet" id="exportReview">Export filtered CSV</button></div>
+  <div class="review-controls"><input type="search" id="reviewSearch" placeholder="Search ID, question, answer, or solution"><select id="reviewCategory"><option value="all">All categories</option></select><select id="reviewStatus"><option value="all">All statuses</option><option value="review-required">Review required</option><option value="corrected">Corrected</option><option value="validated-structure">Validated structure</option></select><select id="reviewPageSize"><option>20</option><option selected>40</option><option>80</option></select></div>
+  <div id="reviewCount" class="small muted"></div><div id="reviewList" class="review-list"></div><div class="pager"><button class="btn btn-quiet" id="reviewPrev">Previous</button><span id="reviewPageLabel" class="small muted"></span><button class="btn btn-quiet" id="reviewNext">Next</button></div>
+</section>
+<section id="progressView" class="view">
+  <div class="page-head"><div><h1>Progress</h1><p>Stored in this browser using localStorage. Export/import to move progress between devices.</p></div><button class="btn btn-danger" id="resetProgress">Reset progress</button></div>
+  <div class="grid grid-4" id="progressMetrics"></div><div class="spacer16"></div><div class="card card-pad"><h2>Accuracy by category</h2><div id="categoryProgress"></div></div>
+</section>
+</main></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

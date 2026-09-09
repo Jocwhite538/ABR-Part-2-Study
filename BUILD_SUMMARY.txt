@@ -1,0 +1,17 @@
+ABR Part 2 Study Lab - GitHub Source Edition v3.0
+
+Questions: 1071
+Categories: 6
+Visual questions: 54
+Structured content/table questions: 55
+Questions with exact original source assets: 185
+Exact source image/crop files: 233
+Source-required coverage: PASS
+Visual-source coverage: PASS
+Static GitHub Pages app: yes
+Python server required: no
+Progress persistence: browser localStorage
+QA: 100/100 PASS
+
+Important: 100/100 is software/data/source-fidelity QA, not independent clinical validation of every answer.
+Therapy Imaging Q68 is intentionally flagged because the supplied answer key conflicts with the appearance of the original source image.

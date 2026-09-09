@@ -1,0 +1,101 @@
+ABR Part 2 GitHub Study Lab self-test: 100/100 PASS
+001. PASS - Core file exists: index.html
+002. PASS - Core file exists: styles.css
+003. PASS - Core file exists: app.js
+004. PASS - Core file exists: question_bank.json
+005. PASS - Core file exists: README.md
+006. PASS - Core file exists: BUILD_META.json
+007. PASS - Source asset directory exists
+008. PASS - Teaching asset directory exists
+009. PASS - Index references stylesheet
+010. PASS - Index references app script
+011. PASS - Question bank is a JSON object
+012. PASS - Question list exists
+013. PASS - Exactly 1071 questions
+014. PASS - Exactly six categories
+015. PASS - Question IDs are unique
+016. PASS - All questions have category IDs
+017. PASS - All questions have stems
+018. PASS - All questions have answers
+019. PASS - All questions have solutions
+020. PASS - Version is GitHub source edition
+021. PASS - Category count brachy_biology
+022. PASS - Category count reference_dosimetry
+023. PASS - Category count shielding_safety
+024. PASS - Category count therapy_imaging
+025. PASS - Category count treatment_machines
+026. PASS - Category count treatment_planning
+027. PASS - Category brachy_biology present in metadata
+028. PASS - Category reference_dosimetry present in metadata
+029. PASS - Category shielding_safety present in metadata
+030. PASS - Category therapy_imaging present in metadata
+031. PASS - Category treatment_machines present in metadata
+032. PASS - Category treatment_planning present in metadata
+033. PASS - Valid grading modes
+034. PASS - Single items have one key
+035. PASS - Multi items have at least one key
+036. PASS - Answer indices in bounds
+037. PASS - No blank choices
+038. PASS - Single/multi questions have choices
+039. PASS - Source-required questions exist
+040. PASS - Visual questions exist
+041. PASS - Structured content questions exist
+042. PASS - Review-required items exist
+043. PASS - Corrected item exists
+044. PASS - Mapping-corrected items retained
+045. PASS - All source-required questions have source assets
+046. PASS - All visual questions have source assets
+047. PASS - All structured-content questions have source assets
+048. PASS - All source asset files exist
+049. PASS - At least 200 source snippets installed
+050. PASS - All source snippets are image formats
+051. PASS - No absolute source paths in bank
+052. PASS - No parent traversal in source paths
+053. PASS - All source assets non-empty
+054. PASS - Build metadata says no source failures
+055. PASS - Therapy imaging Q68 exact source installed
+056. PASS - Treatment machines Q7 exact source installed
+057. PASS - Content blocks are lists
+058. PASS - At least 20 structured tables
+059. PASS - Tables have headers
+060. PASS - Tables have rows
+061. PASS - Table rows match header width
+062. PASS - Treatment planning Q1 has table
+063. PASS - Treatment planning Q2 has two tables
+064. PASS - Treatment machines Q20 has table
+065. PASS - Structured tables are rendered in JS
+066. PASS - Exact source images are rendered in JS
+067. PASS - Original source badge exists
+068. PASS - Source crop viewer exists
+069. PASS - Q15 corrected answer is 9 cm
+070. PASS - Q15 corrected index points to 9 cm
+071. PASS - Q15 status is corrected
+072. PASS - Q15 audit note documents source-derived key
+073. PASS - Q15 exact original figure crop installed
+074. PASS - Q15 solution contains 4A/P
+075. PASS - Q68 is explicitly review-required
+076. PASS - Q68 verification flag is true
+077. PASS - Q68 source-key conflict tag exists
+078. PASS - Q68 exact original CT image crop installed
+079. PASS - Q68 supplied key is preserved
+080. PASS - Q68 audit note describes conflict
+081. PASS - Browser localStorage support
+082. PASS - Progress export UI
+083. PASS - Progress import UI
+084. PASS - Weakest-first order UI
+085. PASS - Question bank view
+086. PASS - Progress view
+087. PASS - Session CSV export UI
+088. PASS - Review-required filtering
+089. PASS - Visual-question logic
+090. PASS - Structured-content logic
+091. PASS - No Python backend required by index
+092. PASS - Bank fetched by relative URL
+093. PASS - All main asset references are relative
+094. PASS - CSS includes mobile breakpoint
+095. PASS - HTML has responsive viewport
+096. PASS - No external CDN dependency
+097. PASS - README includes GitHub Pages path
+098. PASS - README explains localStorage
+099. PASS - README qualifies answer keys
+100. PASS - JavaScript syntax passes node --check
